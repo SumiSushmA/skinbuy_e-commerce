@@ -1,16 +1,13 @@
-import React from 'react';
 import Image from 'next/image';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
 // internal
-import logo_1 from '@assets/img/brand/logo_01.png';
-import logo_2 from '@assets/img/brand/logo_02.png';
-import logo_3 from '@assets/img/brand/logo_03.png';
-import logo_4 from '@assets/img/brand/logo_04.png';
-import logo_5 from '@assets/img/brand/logo_05.png';
-import logo_6 from '@assets/img/brand/logo_02.png';
-import logo_7 from '@assets/img/brand/logo_04.png';
 import { ArrowNextSm, ArrowPrevSm } from '@/svg';
+import logo_1 from '@assets/img/brand/logo_01.png';
+import { default as logo_2, default as logo_6 } from '@assets/img/brand/logo_02.png';
+import logo_3 from '@assets/img/brand/logo_03.png';
+import { default as logo_4, default as logo_7 } from '@assets/img/brand/logo_04.png';
+import logo_5 from '@assets/img/brand/logo_05.png';
 
 // brand data 
 const brand_data = [logo_1, logo_2, logo_3, logo_4, logo_5,logo_6,logo_7]
