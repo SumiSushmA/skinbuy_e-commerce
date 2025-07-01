@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
 import Image from 'next/image';
+import { useState } from 'react';
 import Slider from 'react-slick';
 // internal
 import slider_img_1 from '@assets/img/slider/4/slider-1.png';
@@ -7,11 +7,11 @@ import slider_img_2 from '@assets/img/slider/4/slider-2.png';
 import slider_img_3 from '@assets/img/slider/4/slider-3.png';
 import slider_img_4 from '@assets/img/slider/4/slider-4.png';
 // nav icon
+import { ArrowNextTwo, ArrowPrevTwo, Pause, Play } from '@/svg';
 import nav_icon_1 from '@assets/img/slider/4/nav/icon-1.png';
 import nav_icon_2 from '@assets/img/slider/4/nav/icon-2.png';
 import nav_icon_3 from '@assets/img/slider/4/nav/icon-3.png';
 import nav_icon_4 from '@assets/img/slider/4/nav/icon-4.png';
-import { ArrowNextTwo, ArrowPrevTwo, Pause, Play } from '@/svg';
 import text_shape from '@assets/img/slider/4/shape/rounded-test.png';
 import Link from 'next/link';
 
@@ -89,7 +89,7 @@ const JewelryBanner = () => {
                 <div className={`tp-slider-video transition-3 ${play?'full-width':''}`}>
 
                   <video loop>
-                    <source type="video/mp4" src="http://weblearnbd.net/tphtml/videos/shofy/jewellery-1.mp4#t=3" />
+                    <source type="video/mp4" src="http://weblearnbd.net/tphtml/videos/skinBuy/jewellery-1.mp4#t=3" />
                   </video>
                 </div>
                 {/* <!-- video button --> */}

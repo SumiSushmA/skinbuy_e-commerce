@@ -1,11 +1,10 @@
-import React from "react";
+import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 import * as Yup from "yup";
-import { yupResolver } from "@hookform/resolvers/yup";
 // internal
-import ErrorMsg from "../common/error-msg";
 import { useResetPasswordMutation } from "@/redux/features/auth/authApi";
 import { notifyError, notifySuccess } from "@/utils/toast";
+import ErrorMsg from "../common/error-msg";
 
 // schema
 const schema = Yup.object().shape({
@@ -42,7 +41,7 @@ const ForgotForm = () => {
               name="email"
               id="email"
               type="email"
-              placeholder="shofy@mail.com"
+              placeholder="skinBuy@mail.com"
             />
           </div>
           <div className="tp-login-input-title">

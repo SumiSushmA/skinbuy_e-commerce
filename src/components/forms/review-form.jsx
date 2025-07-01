@@ -1,13 +1,13 @@
-import React,{useState} from "react";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useSelector } from "react-redux";
 import { Rating } from "react-simple-star-rating";
 import * as Yup from "yup";
 // internal
-import ErrorMsg from "../common/error-msg";
 import { useAddReviewMutation } from "@/redux/features/reviewApi";
 import { notifyError, notifySuccess } from "@/utils/toast";
+import ErrorMsg from "../common/error-msg";
 
 // schema
 const schema = Yup.object().shape({
@@ -98,7 +98,7 @@ const ReviewForm = ({product_id}) => {
               name="email"
               id="email"
               type="email"
-              placeholder="shofy@mail.com"
+              placeholder="skinBuy@mail.com"
             />
           </div>
           <div className="tp-product-details-review-input-title">

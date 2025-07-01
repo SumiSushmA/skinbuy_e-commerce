@@ -1,12 +1,9 @@
-import React, { useState } from "react";
-import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { useForm } from "react-hook-form";
 import * as Yup from "yup";
-import { useRouter } from "next/router";
 // internal
-import { CloseEye, OpenEye } from "@/svg";
+import { notifySuccess } from "@/utils/toast";
 import ErrorMsg from "../common/error-msg";
-import { notifyError, notifySuccess } from "@/utils/toast";
 
 // schema
 const schema = Yup.object().shape({
@@ -48,7 +45,7 @@ const ContactForm = () => {
         </div>
         <div className="tp-contact-input-box">
           <div className="tp-contact-input">
-            <input {...register("email", { required: `Email is required!` })} name="email" id="email" type="email" placeholder="shofy@mail.com" />
+            <input {...register("email", { required: `Email is required!` })} name="email" id="email" type="email" placeholder="skinBuy@mail.com" />
           </div>
           <div className="tp-contact-input-title">
             <label htmlFor="email">Your Email</label>

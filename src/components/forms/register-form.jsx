@@ -1,13 +1,13 @@
-import React, { useState } from "react";
-import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import * as Yup from "yup";
 import { useRouter } from "next/router";
+import { useState } from "react";
+import { useForm } from "react-hook-form";
+import * as Yup from "yup";
 // internal
-import { CloseEye, OpenEye } from "@/svg";
-import ErrorMsg from "../common/error-msg";
-import { notifyError, notifySuccess } from "@/utils/toast";
 import { useRegisterUserMutation } from "@/redux/features/auth/authApi";
+import { CloseEye, OpenEye } from "@/svg";
+import { notifyError, notifySuccess } from "@/utils/toast";
+import ErrorMsg from "../common/error-msg";
 
 // schema
 const schema = Yup.object().shape({
@@ -69,7 +69,7 @@ const RegisterForm = () => {
               id="email"
               name="email"
               type="email"
-              placeholder="shofy@mail.com"
+              placeholder="skinBuy@mail.com"
             />
           </div>
           <div className="tp-login-input-title">
