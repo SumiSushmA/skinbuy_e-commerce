@@ -1,2 +1,2 @@
-# skinbuy_e-commerce
+# skinBuy_e-commerce
 
