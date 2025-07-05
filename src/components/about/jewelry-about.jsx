@@ -1,10 +1,9 @@
-import React from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
 // internal
+import { ArrowRightLong } from '@/svg';
 import about_img from '@assets/img/about/about-1.jpg';
 import about_thumb from '@assets/img/about/about-2.jpg';
-import { ArrowRightLong } from '@/svg';
 
 const JewelryAbout = () => {
   return (
@@ -29,7 +28,11 @@ const JewelryAbout = () => {
                   <h3 className="tp-section-title-4 fz-50">Shop our limited Edition Collaborations</h3>
                 </div>
                 <div className="tp-about-content pl-120">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Cras vel mi quam. Fusce vehicula vitae mauris sit amet tempor. Donec consectetur lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                  <p>             At SkinBuy, we’re passionate about helping you achieve healthy, glowing skin.
+                  From gentle cleansers and nourishing serums to hydrating moisturizers, our
+                  expertly curated collections are designed to address every skin concern.
+                  Browse our range of dermatologist-approved products and elevate your daily
+                  routine with the very best in skincare innovation.</p>
 
                   <div className="tp-about-btn">
                     <Link href="/contact" className="tp-btn">

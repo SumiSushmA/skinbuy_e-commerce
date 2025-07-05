@@ -6,7 +6,7 @@ const BlogPostCommentForm = () => {
         <div className="tp-postbox-details-form-inner">
           <div className="tp-postbox-details-input-box">
             <div className="tp-contact-input">
-              <input name="name" id="name" type="text" placeholder="Shahnewaz Sakil" />
+              <input name="name" id="name" type="text" placeholder="Sushma Sharma" />
             </div>
             <div className="tp-postbox-details-input-title">
               <label htmlFor="name">Your Name</label>

@@ -54,7 +54,7 @@ const RegisterForm = () => {
               id="name"
               name="name"
               type="text"
-              placeholder="Shahnewaz Sakil"
+              placeholder="Sushma Sharma"
             />
           </div>
           <div className="tp-login-input-title">

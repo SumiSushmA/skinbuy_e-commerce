@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
 import Image from 'next/image';
-import { useDispatch, useSelector } from 'react-redux';
 import Link from 'next/link';
+import { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 // internal
-import Menus from './header-com/menus';
-import logo from '@assets/img/logo/logo.svg';
-import useSticky from '@/hooks/use-sticky';
-import useCartInfo from '@/hooks/use-cart-info';
-import { openCartMini } from '@/redux/features/cartSlice';
-import HeaderTopRight from './header-com/header-top-right';
 import CartMiniSidebar from '@/components/common/cart-mini-sidebar';
-import { CartTwo, Compare, Facebook, Menu, PhoneTwo, Wishlist, Search } from '@/svg';
-import useSearchFormSubmit from '@/hooks/use-search-form-submit';
 import OffCanvas from '@/components/common/off-canvas';
+import useCartInfo from '@/hooks/use-cart-info';
+import useSearchFormSubmit from '@/hooks/use-search-form-submit';
+import useSticky from '@/hooks/use-sticky';
+import { openCartMini } from '@/redux/features/cartSlice';
+import { CartTwo, Compare, Menu, PhoneTwo, Search, Wishlist } from '@/svg';
+import logo from '@assets/img/logo/logo.svg';
+import HeaderTopRight from './header-com/header-top-right';
+import Menus from './header-com/menus';
 
 const HeaderTwo = ({ style_2 = false }) => {
   const { wishlist } = useSelector((state) => state.wishlist);
@@ -32,16 +32,14 @@ const HeaderTwo = ({ style_2 = false }) => {
                   <div className="tp-header-info d-flex align-items-center">
                     <div className="tp-header-info-item">
                       <a href="#">
-                        <span>
-                          <Facebook />
-                        </span> 7500k Followers
+                        Hello
                       </a>
                     </div>
                     <div className="tp-header-info-item">
                       <a href="tel:402-763-282-46">
                         <span>
                           <PhoneTwo />
-                        </span> +(966) 595 035 008
+                        </span> +(977) 9812345678
                       </a>
                     </div>
                   </div>

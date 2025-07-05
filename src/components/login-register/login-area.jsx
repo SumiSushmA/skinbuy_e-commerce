@@ -1,9 +1,8 @@
-import React from "react";
 import Link from "next/link";
 // internal
 import LoginForm from "../forms/login-form";
-import LoginShapes from "./login-shapes";
 import GoogleSignUp from "./google-sign-up";
+import LoginShapes from "./login-shapes";
 
 const LoginArea = () => {
 

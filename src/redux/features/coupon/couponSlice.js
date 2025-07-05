@@ -1,3 +1,4 @@
+//src\redux\features\coupon\couponSlice.js
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
@@ -30,3 +31,4 @@ export const couponSlice = createSlice({
 
 export const { set_coupon,get_coupons } = couponSlice.actions;
 export default couponSlice.reducer;
+

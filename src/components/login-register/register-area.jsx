@@ -1,9 +1,8 @@
-import React from "react";
 import Link from "next/link";
 // internal
-import LoginShapes from "./login-shapes";
 import RegisterForm from "../forms/register-form";
 import GoogleSignUp from "./google-sign-up";
+import LoginShapes from "./login-shapes";
 
 
 const RegisterArea = () => {

@@ -7,172 +7,147 @@ export const authApi = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
     registerUser: builder.mutation({
       query: (data) => ({
-        url: "https://skinBuy-backend.vercel.app/api/user/signup",
+        url: "/api/user/signup",
         method: "POST",
         body: data,
       }),
     }),
-    // signUpProvider
     signUpProvider: builder.mutation({
       query: (token) => ({
-        url: `https://skinBuy-backend.vercel.app/api/user/register/${token}`,
+        url: `/api/user/register/${token}`,
         method: "POST",
       }),
-
       async onQueryStarted(arg, { queryFulfilled, dispatch }) {
         try {
-          const result = await queryFulfilled;
-
+          const { data } = await queryFulfilled;
           Cookies.set(
             "userInfo",
             JSON.stringify({
-              accessToken: result.data.data.token,
-              user: result.data.data.user,
+              accessToken: data.data.token,
+              user: data.data.user,
             }),
             { expires: 0.5 }
           );
-
           dispatch(
             userLoggedIn({
-              accessToken: result.data.data.token,
-              user: result.data.data.user,
+              accessToken: data.data.token,
+              user: data.data.user,
             })
           );
-        } catch (err) {
-          // do nothing
+        } catch {
+          // ignore
         }
       },
     }),
-    // login
     loginUser: builder.mutation({
       query: (data) => ({
-        url: "https://skinBuy-backend.vercel.app/api/user/login",
+        url: "/api/user/login",
         method: "POST",
         body: data,
       }),
-
       async onQueryStarted(arg, { queryFulfilled, dispatch }) {
         try {
-          const result = await queryFulfilled;
-
+          const { data } = await queryFulfilled;
           Cookies.set(
             "userInfo",
             JSON.stringify({
-              accessToken: result.data.data.token,
-              user: result.data.data.user,
+              accessToken: data.data.token,
+              user: data.data.user,
             }),
             { expires: 0.5 }
           );
-
           dispatch(
             userLoggedIn({
-              accessToken: result.data.data.token,
-              user: result.data.data.user,
+              accessToken: data.data.token,
+              user: data.data.user,
             })
           );
-        } catch (err) {
-          // do nothing
+        } catch {
+          // ignore
         }
       },
     }),
-    // get me
     getUser: builder.query({
-      query: () => "https://skinBuy-backend.vercel.app/api/user/me",
-
+      query: () => "/api/user/me",
       async onQueryStarted(arg, { queryFulfilled, dispatch }) {
         try {
-          const result = await queryFulfilled;
-          dispatch(
-            userLoggedIn({
-              user: result.data,
-            })
-          );
-        } catch (err) {
-          // do nothing
+          const { data } = await queryFulfilled;
+          dispatch(userLoggedIn({ user: data }));
+        } catch {
+          // ignore
         }
       },
     }),
-    // confirmEmail
     confirmEmail: builder.query({
-      query: (token) => `https://skinBuy-backend.vercel.app/api/user/confirmEmail/${token}`,
-
+      query: (token) => `/api/user/confirmEmail/${token}`,
       async onQueryStarted(arg, { queryFulfilled, dispatch }) {
         try {
-          const result = await queryFulfilled;
-
+          const { data } = await queryFulfilled;
           Cookies.set(
             "userInfo",
             JSON.stringify({
-              accessToken: result.data.data.token,
-              user: result.data.data.user,
+              accessToken: data.data.token,
+              user: data.data.user,
             }),
             { expires: 0.5 }
           );
-
           dispatch(
             userLoggedIn({
-              accessToken: result.data.data.token,
-              user: result.data.data.user,
+              accessToken: data.data.token,
+              user: data.data.user,
             })
           );
-        } catch (err) {
-          // do nothing
+        } catch {
+          // ignore
         }
       },
     }),
-    // reset password
     resetPassword: builder.mutation({
       query: (data) => ({
-        url: "https://skinBuy-backend.vercel.app/api/user/forget-password",
+        url: "/api/user/forget-password",
         method: "PATCH",
         body: data,
       }),
     }),
-    // confirmForgotPassword
     confirmForgotPassword: builder.mutation({
       query: (data) => ({
-        url: "https://skinBuy-backend.vercel.app/api/user/confirm-forget-password",
+        url: "/api/user/confirm-forget-password",
         method: "PATCH",
         body: data,
       }),
     }),
-    // change password
     changePassword: builder.mutation({
       query: (data) => ({
-        url: "https://skinBuy-backend.vercel.app/api/user/change-password",
+        url: "/api/user/change-password",
         method: "PATCH",
         body: data,
       }),
     }),
-    // updateProfile password
     updateProfile: builder.mutation({
       query: ({ id, ...data }) => ({
-        url: `https://skinBuy-backend.vercel.app/api/user/update-user/${id}`,
+        url: `/api/user/update-user/${id}`,
         method: "PUT",
         body: data,
       }),
-
       async onQueryStarted(arg, { queryFulfilled, dispatch }) {
         try {
-          const result = await queryFulfilled;
-
+          const { data } = await queryFulfilled;
           Cookies.set(
             "userInfo",
             JSON.stringify({
-              accessToken: result.data.data.token,
-              user: result.data.data.user,
+              accessToken: data.data.token,
+              user: data.data.user,
             }),
             { expires: 0.5 }
           );
-
           dispatch(
             userLoggedIn({
-              accessToken: result.data.data.token,
-              user: result.data.data.user,
+              accessToken: data.data.token,
+              user: data.data.user,
             })
           );
-        } catch (err) {
-          // do nothing
+        } catch {
+          // ignore
         }
       },
     }),
@@ -180,12 +155,13 @@ export const authApi = apiSlice.injectEndpoints({
 });
 
 export const {
-  useLoginUserMutation,
   useRegisterUserMutation,
+  useSignUpProviderMutation,
+  useLoginUserMutation,
+  useGetUserQuery,
   useConfirmEmailQuery,
   useResetPasswordMutation,
   useConfirmForgotPasswordMutation,
   useChangePasswordMutation,
   useUpdateProfileMutation,
-  useSignUpProviderMutation,
 } = authApi;

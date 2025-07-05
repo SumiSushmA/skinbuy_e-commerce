@@ -13,17 +13,17 @@ function Language({active,handleActive}) {
         className="tp-header-lang-toggle"
         id="tp-header-lang-toggle"
       >
-        English
+        American English
       </span>
       <ul className={active === 'lang' ? "tp-lang-list-open" : ""}>
         <li>
-          <a href="#">Spanish</a>
+          <a href="#">Nepali</a>
         </li>
         <li>
-          <a href="#">Russian</a>
+          <a href="#">Indian</a>
         </li>
         <li>
-          <a href="#">Portuguese</a>
+          <a href="#">British English</a>
         </li>
       </ul>
     </div>

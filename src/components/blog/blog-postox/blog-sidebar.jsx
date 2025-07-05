@@ -1,11 +1,10 @@
-import React from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
 // internal
-import user from '@assets/img/users/user-11.jpg';
-import signature from '@assets/img/blog/signature/signature.png';
-import { Search } from '@/svg';
 import blogData from '@/data/blog-data';
+import { Search } from '@/svg';
+import signature from '@assets/img/blog/signature/signature.png';
+import user from '@assets/img/users/user-11.jpg';
 
 // latest post
 const latest_post = blogData.slice(0,3)
@@ -39,10 +38,13 @@ const BlogSidebar = () => {
               </div>
               <div className="tp-sidebar-about-content">
                 <h3 className="tp-sidebar-about-title">
-                  <a href="#">Ravi {"O'Leigh"}</a>
+                  <a href="#">Prasanna {"Poudel"}</a>
                 </h3>
                 <span className="tp-sidebar-about-designation">Photographer & Blogger</span>
-                <p>Lorem ligula eget dolor. Aenean massa. Cum sociis que penatibus magnis dis parturient</p>
+                <p>    Hi, I’m Prasanna Poudel. As a licensed esthetician with over 7 years’ experience,
+    I’ve guided hundreds of clients to healthier, glowing skin. Here at SkinBuy
+    I share honest product reviews, expert tips, and customized routines so you
+    can feel confident in your complexion every day.</p>
                 <div className="tp-sidebar-about-signature">
                   <Image src={signature} alt="signature" />
                 </div>
@@ -84,12 +86,12 @@ const BlogSidebar = () => {
           <h3 className="tp-sidebar-widget-title">Categories</h3>
           <div className="tp-sidebar-widget-content">
             <ul>
-              <li><Link href="/blog">Farming <span>(12)</span></Link></li>
-              <li><Link href="/blog">Crisp Bread & Cake <span>(6)</span></Link></li>
-              <li><Link href="/blog">Milk & Meat <span>(2)</span></Link></li>
-              <li><Link href="/blog">Organic Fruits <span>(8)</span></Link></li>
-              <li><Link href="/blog">Sea Foods <span>(0)</span></Link></li>
-              <li><Link href="/blog">Vegetable <span>(3)</span></Link></li>
+              <li><Link href="/blog">Gloss <span>(12)</span></Link></li>
+              <li><Link href="/blog">Foundation <span>(6)</span></Link></li>
+              <li><Link href="/blog">Cream <span>(2)</span></Link></li>
+              <li><Link href="/blog">Cloth <span>(8)</span></Link></li>
+              <li><Link href="/blog">Highliter <span>(0)</span></Link></li>
+              <li><Link href="/blog">Blush <span>(3)</span></Link></li>
             </ul>
           </div>
         </div>
@@ -102,9 +104,9 @@ const BlogSidebar = () => {
             <a href="#">Summer</a>
             <a href="#">Vintage</a>
             <a href="#">Sunglasses</a>
-            <a href="#">Organic Food</a>
+            <a href="#">Makeup</a>
             <a href="#">Lifesttyle</a>
-            <a href="#">Nature</a>
+            <a href="#">Natural Product</a>
           </div>
         </div>
         {/* <!-- tag cloud end --> */}

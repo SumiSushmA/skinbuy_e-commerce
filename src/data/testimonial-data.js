@@ -36,25 +36,25 @@ export const beauty_testi_data = [
   {
     id:1,
     review:4,
-    desc:'Suscipit tellus mauris a diam maecenas. Ut faucibus pulvinar elementum integer enim neque volutpat ac. Auctor urna nunc id cursus. Scelerisque purus semper eget duis at. Pharetra vel turpis nunc eget.',
+    desc:'SkinBuy’s fashion collection is superb—every piece fits like a dream and the quality is outstanding!',
     user:user_1,
-    name:'Jake Weary',
+    name:'Bimal',
     designation:'CO Founder'
   },
   {
     id:2,
     review:3.5,
-    desc:'Suscipit tellus mauris a diam maecenas. Ut faucibus pulvinar elementum integer enim neque volutpat ac. Auctor urna nunc id cursus. Scelerisque purus semper eget duis at. Pharetra vel turpis nunc eget.',
+    desc:'I found the perfect outfit for my event in minutes. The site is so intuitive, and delivery was lightning-fast.',
     user:user_2,
-    name:'Salim Rana',
+    name:'Sushil Acharya',
     designation:'Web Developer'
   },
   {
     id:3,
     review:5,
-    desc:'Suscipit tellus mauris a diam maecenas. Ut faucibus pulvinar elementum integer enim neque volutpat ac. Auctor urna nunc id cursus. Scelerisque purus semper eget duis at. Pharetra vel turpis nunc eget.',
+    desc:'Love the on-trend styles and great prices. SkinBuy is now my go-to destination for fashion!',
     user:user_3,
-    name:'Selina Gomz',
+    name:'Sumi Sharma',
     designation:'CO Founder'
   },
 ]

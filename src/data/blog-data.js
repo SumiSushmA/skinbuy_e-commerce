@@ -121,7 +121,7 @@ const blogData = [
     tags: ["Fashion", "Lift Style","News"],
     category:'Beauty',
     title:'How to Clean Your Home Faster and More Efficiently',
-    desc:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat',
+    desc:' Discover practical shortcuts for deep-cleaning every room in your house without sacrificing quality. Learn how to prioritize high-traffic areas, choose multi-purpose, eco-friendly products, and create a streamlined schedule that keeps your space spotless in half the time.',
     blog:'blog-postbox'
   },
   {
@@ -133,7 +133,7 @@ const blogData = [
     tags: ["Fashion", "Lift Style","News"],
     category:'Beauty',
     title:'Four Ways a Clean Workplace Makes Employees Happy and Healthy',
-    desc:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat',
+    desc:'A tidy office isn’t just about appearance—it boosts morale, reduces  sick days, and improves focus. In this article, we share four easy strategies—from air-purifying plants to scheduled mini-cleans—that foster a healthier, more productive work environment.',
     video:true,
     video_id:'457mlqV1gzA',
     blog:'blog-postbox'
@@ -141,12 +141,12 @@ const blogData = [
   {
     id:9,
     date:'March 15, 2023',
-    author:'Shahnewaz Sakil',
+    author:'Sushma Sharma',
     comments:8,
     tags: ["Fashion", "Lift Style","News"],
     category:'Beauty',
     title:'Only one thing is impossible for God: To find any sense in any copyright law on the planet.',
-    desc:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat',
+    desc:'Copyright rules can feel arbitrary—yet they shape creativity worldwide.  We break down the origins of key copyright concepts, reveal surprising loopholes, and explain how creators can protect their work without stifling innovation.',
     blockquote:true,
     blog:'blog-postbox'
   },
@@ -158,7 +158,7 @@ const blogData = [
     tags: ["Fashion", "Lift Style","News"],
     category:'Beauty',
     title:'Time for Spring Cleaning? Use These Tips From the Professionals',
-    desc:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat',
+    desc:'Spring’s here—time to refresh your home from top to bottom. We asked  professional organizers and cleaning experts for their go-to hacks: effective decluttering methods, green cleaning recipes, and easy  storage solutions that last all year long.',
     audio:true,
     audio_id:'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/316547873&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
     blog:'blog-postbox'
@@ -173,7 +173,7 @@ const blogData = [
     tags: ["Fashion", "Lift Style","News"],
     category:'Beauty',
     title:'Time for Spring Cleaning? Use These Tips From the Professionals',
-    desc:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat',
+    desc:'Witness incredible home makeovers: from dusty corners to  gleaming counters. Our slide deck walks you through each step, highlights must-have tools, and shows how small changes can create a huge impact in any living space.',
     blog:'blog-postbox'
   },
   // blog grid data 
@@ -187,7 +187,7 @@ const blogData = [
     tags: ["Fashion", "Lift Style","News"],
     category:'Beauty',
     title:'Hiring the Right Sales Team at the Right Time',
-    desc:'Cursus mattis sociis natoque penatibus et magnis montes,nascetur ridiculus.',
+    desc:'Learn how to build a stellar sales force by identifying key skills, crafting attractive job offers, and timing your hires to match your company’s growth phases for maximum impact.',
     blog:'blog-grid'
   },
   {
@@ -200,7 +200,7 @@ const blogData = [
     tags: ["Fashion", "Lift Style","News"],
     category:'Beauty',
     title:'Fully Embrace the Return of 90s fashion',
-    desc:'Cursus mattis sociis natoque penatibus et magnis montes,nascetur ridiculus.',
+    desc:'From oversized denim jackets to neon accessories, we dive into the  hottest 90s trends making a comeback and show you how to style them for a fresh, modern look.',
     blog:'blog-grid'
   },
   {
@@ -213,7 +213,7 @@ const blogData = [
     tags: ["Fashion", "Lift Style","News"],
     category:'Beauty',
     title:'Exploring the English Countryside',
-    desc:'Cursus mattis sociis natoque penatibus et magnis montes,nascetur ridiculus.',
+    desc:'Journey through rolling green hills, historic villages, and quaint  tea rooms as we uncover hidden gems and insider tips for your perfect rural escape.',
     blog:'blog-grid'
   },
   {
@@ -226,7 +226,7 @@ const blogData = [
     tags: ["Fashion", "Lift Style","News"],
     category:'Beauty',
     title:'Here’s the First Valentino’s New Makeup Collection',
-    desc:'Cursus mattis sociis natoque penatibus et magnis montes,nascetur ridiculus.',
+    desc:'Get an exclusive look at Valentino’s latest beauty launch, including  shade breakdowns, formula highlights, and the inspiration behind each luxurious piece. ',
     blog:'blog-grid'
   },
   {
@@ -239,7 +239,7 @@ const blogData = [
     tags: ["Fashion", "Lift Style","News"],
     category:'Beauty',
     title:'Follow Your own Design process, whatever gets',
-    desc:'Cursus mattis sociis natoque penatibus et magnis montes,nascetur ridiculus.',
+    desc:'Discover a flexible design workflow that adapts to any project:  from initial research and moodboarding to prototyping and final reviews, ensuring you stay creative and on schedule.',
     blog:'blog-grid'
   },
   {
@@ -252,7 +252,7 @@ const blogData = [
     tags: ["Fashion", "Lift Style","News"],
     category:'Beauty',
     title:'Freelancer Days 2022, What’s new?',
-    desc:'Cursus mattis sociis natoque penatibus et magnis montes,nascetur ridiculus.',
+    desc:' Catch up on the latest platforms, rates, and productivity tools  shaping the freelance landscape in 2022—plus tips to keep your business thriving.',
     blog:'blog-grid'
   },
   {
@@ -265,7 +265,7 @@ const blogData = [
     tags: ["Fashion", "Lift Style","News"],
     category:'Beauty',
     title:'Hiring the Right Sales Team at the Right Time',
-    desc:'Cursus mattis sociis natoque penatibus et magnis montes,nascetur ridiculus.',
+    desc:' Timing is everything when scaling your sales department. Learn how  to forecast hiring needs, attract top performers, and maintain momentum as your company grows.',
     blog:'blog-grid'
   },
   {
@@ -278,7 +278,7 @@ const blogData = [
     tags: ["Fashion", "Lift Style","News"],
     category:'Beauty',
     title:'Quality Foods Requirments For Every Human Body’s',
-    desc:'Cursus mattis sociis natoque penatibus et magnis montes,nascetur ridiculus.',
+    desc:'Explore the essential nutrients every person needs—from vitamins and  minerals to healthy fats—and learn how to build balanced meals that support lifelong health.',
     blog:'blog-grid'
   },
 ];

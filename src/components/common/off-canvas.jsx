@@ -91,9 +91,9 @@ const OffCanvas = ({ isOffCanvasOpen, setIsCanvasOpen,categoryType = "electronic
                   <div className="offcanvas__lang-wrapper">
                     <span onClick={handleLanguageActive} className="offcanvas__lang-selected-lang tp-lang-toggle" id="tp-offcanvas-lang-toggle">English</span>
                     <ul className={`offcanvas__lang-list tp-lang-list ${isLanguageActive ? 'tp-lang-list-open' : ''}`}>
-                      <li>Spanish</li>
-                      <li>Portugese</li>
-                      <li>American</li>
+                      <li>Nepali</li>
+                      <li>Indian</li>
+                      <li>British English</li>
                       <li>Canada</li>
                     </ul>
                   </div>
