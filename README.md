@@ -77,11 +77,6 @@ SkinBuy is a versatile e‑commerce solution that connects users with a wide ran
    npm run dev
    ```
 
-5. **Open in Browser**
-
-   * Frontend: https://github.com/SumiSushmA/skinbuy_e-commerce.git
-   * API:https://github.com/SumiSushmA/skinbuy_e-commerce_backend.git
-
 ## Conclusion
 
 SkinBuy delivers a modern, extensible e‑commerce experience spanning beauty, fashion, and electronics. Contributions are welcome—feel free to open issues or PRs to enhance features, performance, and integrations.
