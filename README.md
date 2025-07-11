@@ -2,7 +2,7 @@
 
 ## About SkinBuy
 
-SkinBuy is a versatile e‑commerce solution that connects users with a wide range of products including beauty & skincare items, apparel, and electronic devices. It offers an intuitive shopping experience, multiple payment options, and powerful admin tools for managing inventory, orders, and promotions across different categories.
+SkinBuy is a dedicated cosmetics e-commerce platform designed to bring beauty enthusiasts a curated selection of skincare, makeup, and personal care products from trusted brands. By focusing exclusively on cosmetics, it offers an uncluttered shopping environment where users can easily search by keyword, filter by color, brand, price, and availability, and compare similar products side-by-side. 
 
 ## Key Features
 
@@ -79,7 +79,7 @@ SkinBuy is a versatile e‑commerce solution that connects users with a wide ran
 
 ## Conclusion
 
-SkinBuy delivers a modern, extensible e‑commerce experience spanning beauty, fashion, and electronics. Contributions are welcome—feel free to open issues or PRs to enhance features, performance, and integrations.
+SkinBuy delivers a modern, extensible e‑commerce experience spanning beauty. Contributions are welcome—feel free to open issues or PRs to enhance features, performance, and integrations.
 
 ## Repositories
 
