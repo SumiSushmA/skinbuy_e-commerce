@@ -1,20 +1,20 @@
-import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 // internal
-import Menus from "./header-com/menus";
-import useSticky from "@/hooks/use-sticky";
-import logo from "@assets/img/logo/logo.svg";
-import useCartInfo from "@/hooks/use-cart-info";
-import OffCanvas from "@/components/common/off-canvas";
-import { openCartMini } from "@/redux/features/cartSlice";
-import HeaderCategory from "./header-com/header-category";
-import HeaderTopRight from "./header-com/header-top-right";
-import HeaderMainRight from "./header-com/header-main-right";
 import CartMiniSidebar from "@/components/common/cart-mini-sidebar";
+import OffCanvas from "@/components/common/off-canvas";
 import HeaderSearchForm from "@/components/forms/header-search-form";
+import useCartInfo from "@/hooks/use-cart-info";
+import useSticky from "@/hooks/use-sticky";
+import { openCartMini } from "@/redux/features/cartSlice";
 import { CartTwo, CategoryMenu, Compare, Menu, Phone, ShippingCar, Wishlist } from "@/svg";
+import logo from "@assets/img/logo/logo.svg";
+import HeaderCategory from "./header-com/header-category";
+import HeaderMainRight from "./header-com/header-main-right";
+import HeaderTopRight from "./header-com/header-top-right";
+import Menus from "./header-com/menus";
 
 const Header = () => {
   const { wishlist } = useSelector((state) => state.wishlist);
@@ -111,7 +111,7 @@ const Header = () => {
                       <div className="tp-header-contact-content">
                         <h5>Hotline:</h5>
                         <p>
-                          <a href="tel:966-595-035-008">+(966) 595 035 008</a>
+                          <a href="tel:966-595-035-008">+(977) 9812345678</a>
                         </p>
                       </div>
                     </div>
