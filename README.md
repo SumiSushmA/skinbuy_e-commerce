@@ -28,7 +28,7 @@ SkinBuy is a dedicated cosmetics e-commerce platform designed to bring beauty en
 | Backend     | Node.js, Express.js, Mongoose |
 | Database    | MongoDB                       |
 | State Mgmt. | Redux Toolkit (RTK Query)     |
-| Payments    | eSewa, Stripe, PayPal, Khalti |
+| Payments    |  Stripe, Cash On Delivery |
 | Design      | Figma                         |
 
 ## How to Use the Code
